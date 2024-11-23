@@ -1,181 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>freakOS v129</title>
-<link rel="icon" href="file:///usr/share/chromeos-assets/echo/chrome128.png">
+<title>freakOS v1</title>
+<link rel="icon" href="../usr/share/freakos-assets/echo/chrome128.png">
 <style>
     @font-face {
-        font-family: 'Product Sans Regular';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Product Sans Regular'), url('../usr/share/chromeos-assets/sys/fonts/reg.woff') format('woff');
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('../usr/share/freakos-assetssys/fonts/reg.woff') format('woff');
     }
     @font-face {
-        font-family: 'Product Sans Medium';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Product Sans Medium'), url('../usr/share/chromeos-assets/sys/fonts/med.woff') format('woff');
+    font-family: 'Product Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Medium'), url('../usr/share/freakos-assets/sys/fonts/med.woff') format('woff');
     }
-    body {
-        margin: 0;
-        background-image: url('../usr/share/chromeos-assets/wallpaper/options/option1_small.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        user-select: none;
-    }
-    .taskbar {
-        background-color: rgba(47, 45, 51, 0.8);
-        backdrop-filter: blur(5px);
-        width: 100%;
-        height: 49.4px;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        border-radius: 24.2px 24.2px 0px 0px;
-        align-items: center;
-        display: flex;
-    }
-    .searchbuttontaskbar {
-        background-color: rgb(75, 70, 74);
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        left: 5px;
-        top: 5px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .searchbuttonicon {
-        width: 22px;
-        height: auto;
-    }
-    .taskbaricons {
-        width: 100%;
-        height: 49.4px;
-        background-color: rgba(0,0,0,0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .taskbaricons img {
-        width: 33px;
-        height: auto;
-    }
-    .searchbuttonactivated {
-        background-color: rgb(202, 194, 227);
-    }
-    .quicksettingsbutton {
-        background-color: rgb(75, 70, 74);
-        width: 90px;
-        height: 35px;
-        border-radius: 10px 25px 25px 10px;
-        right: 5px;
-        top: 5px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .quicksettingsbutton p {
-        font-family: 'Product Sans Medium';
-        color: white;
-    }
-    .quicksettingsbutton img {
-        margin-left: 8px;
-        width: 20px;
-        height: auto;
-    }
-    .quicksettingsbuttonactivated {
-        background-color: rgb(202, 194, 227);
-        color: rgb(28, 24, 48);
-    }
-    .calendarbutton {
-        background-color: rgb(75, 70, 74);
-        width: 75px;
-        height: 35px;
-        border-radius: 25px 10px 10px 25px;
-        right: 100px;
-        top: 5px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .calendarbutton p {
-        font-family: 'Product Sans Medium';
-        color: white;
-    }
-    .calendarbuttonactivated {
-        background-color: rgb(202, 194, 227);
-        color: rgb(28, 24, 48);
-    }
-    .iframe-container {
-        position: fixed;
-        bottom: 50px;
-        right: 3px;
-        width: 410px;
-        height: 260px;
-        border: none;
-        display: none;
-        z-index: 998;
-    }
-    .chromium-iframe-container {
-        position: absolute;
-        right: 0px;
-        width: 100%;
-        height: calc(100% - 49.4px);
-        border: none;
-        display: none;
-    }
-    .calendar-container {
-        position: fixed;
-        bottom: 49px;
-        right: 3px;
-        width: 410px;
-        height: 342px;
-        border: none;
-        display: none;
-        z-index: 998;
-    }
-    .tote {
-        background-color: rgb(75, 70, 74);
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        right: 180px;
-        top: 5px;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .toteactivated {
-        background-color: rgb(202, 194, 227);
-        color: rgb(28, 24, 48);
-    }
+body {
+    margin: 0;
+    background-image: url('../usr/share/freakos-assets/wallpaper/wp1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+user-select: none;
+}
+.taskbar {
+    background-color: rgba(47, 45, 51, 0.8);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 49.4px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 24.2px 24.2px 0px 0px;
+    align-items: center;
+    display: flex;
+}
+.searchbuttontaskbar {
+    background-color: rgb(75, 70, 74);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbuttonicon {
+    width: 22px;
+    height: auto;
+}
+.taskbaricons {
+    width: 100%;
+    height: 49.4px;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taskbaricons img {
+    width: 33px;
+    height: auto;
+}
+.searchbuttonactivated {
+    background-color: rgb(202, 194, 227);
+}
+.quicksettingsbutton {
+    background-color: rgb(75, 70, 74);
+    width: 90px;
+    height: 35px;
+    border-radius: 10px 25px 25px 10px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quicksettingsbutton p {
+    font-family: 'Product Sans Medium';
+    color: white;
+}
+.quicksettingsbutton img {
+    margin-left: 8px;
+    width: 20px;
+    height: auto;
+}
+.quicksettingsbuttonactivated {
+    background-color: rgb(202, 194, 227);
+    color: rgb(28, 24, 48);
+}
+.calendarbutton {
+    background-color: rgb(75, 70, 74);
+    width: 75px;
+    height: 35px;
+    border-radius: 25px 10px 10px 25px;
+    right: 100px;
+    top: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendarbutton p {
+    font-family: 'Product Sans Medium';
+    color: white;
+}
+.calendarbuttonactivated {
+    background-color: rgb(202, 194, 227);
+    color: rgb(28, 24, 48);
+}
+.iframe-container {
+    position: fixed;
+    bottom: 50px;
+    right: 3px;
+    width: 410px;
+    height: 260px;
+    border: none;
+    display: none;
+    z-index: 998;
+}
+.chromium-iframe-container {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: calc(100% - 49.4px);
+    border: none;
+    display: none;
+}
+.calendar-container {
+    position: fixed;
+    bottom: 49px;
+    right: 3px;
+    width: 410px;
+    height: 342px;
+    border: none;
+    display: none;
+    z-index: 998;
+}
+.tote {
+    background-color: rgb(75, 70, 74);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    right: 180px;
+    top: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toteactivated {
+    background-color: rgb(202, 194, 227);
+    color: rgb(28, 24, 48);
+}
 </style>
 </head>
 <body>
 <div class="taskbar">
     <div class="searchbuttontaskbar" id="searchButton">
-        <img class="searchbuttonicon" id="searchIcon" src="../usr/share/chromeos-assets/image/search.svg">
+        <img class="searchbuttonicon" id="searchIcon" src="../usr/share/freakos-assets/image/search.svg">
     </div>
     <div class="taskbaricons">
         <img id="chromiumIcon" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chromium_Logo.svg">
     </div>
     <div class="quicksettingsbutton" id="quicksettingsbutton">
         <p class="timequicksettings" id="timeQuickSettings">7:00</p>
-        <img id="wifiIcon" src="../usr/share/chromeos-assets/image/wifion.svg">
+        <img id="wifiIcon" src="../usr/share/freakos-assets/image/wifion.svg">
     </div>
     <div class="calendarbutton" id="calendarbutton">
         <p class="calendar" id="calendar"></p>
     </div>
     <div class="tote" id="totebutton">
-        <img id="toteicon" src="../usr/share/chromeos-assets/image/tote.svg">
+        <img id="toteicon" src="../usr/share/freakos-assets/image/tote.svg">
     </div>
 </div>
 
@@ -191,7 +191,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
         deselectAll();
         this.classList.add('searchbuttonactivated');
         var img = document.getElementById('searchIcon');
-        img.src = '../usr/share/chromeos-assets/image/searchselected.svg';
+        img.src = '../usr/share/freakos-assets/image/searchselected.svg';
     }
 });
 
@@ -260,7 +260,7 @@ function deselectAll() {
     document.querySelectorAll('.searchbuttonactivated, .quicksettingsbuttonactivated, .calendarbuttonactivated').forEach(function(el) {
         el.classList.remove('searchbuttonactivated', 'quicksettingsbuttonactivated', 'calendarbuttonactivated');
         if (el.id === 'searchButton') {
-            document.getElementById('searchIcon').src = '../usr/share/chromeos-assets/image/search.svg';
+            document.getElementById('searchIcon').src = '../usr/share/freakos-assets/image/search.svg';
         } else if (el.id === 'quicksettingsbutton') {
             document.querySelector('.quicksettingsbutton p').style.color = 'white';
             var iframe = document.getElementById('quicksettingsiframe');
@@ -296,9 +296,9 @@ function updateDate() {
 function updateWifiIcon(activated) {
     var wifiIcon = document.getElementById('wifiIcon');
     if (navigator.onLine) {
-        wifiIcon.src = activated ? '../usr/share/chromeos-assets/image/wifionselected.svg' : '../usr/share/chromeos-assets/image/wifion.svg';
+        wifiIcon.src = activated ? '../usr/share/freakos-assets/image/wifionselected.svg' : '../usr/share/freakos-assets/image/wifion.svg';
     } else {
-        wifiIcon.src = activated ? '../usr/share/chromeos-assets/image/wifioffselected.svg' : '../usr/share/chromeos-assets/image/wifioff.svg';
+        wifiIcon.src = activated ? '../usr/share/freakos-assets/image/wifioffselected.svg' : '../usr/share/freakos-assets/image/wifioff.svg';
     }
 }
 

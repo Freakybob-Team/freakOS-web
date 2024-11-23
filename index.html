@@ -1,5 +1,9 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script>
             function showAppletPopup() {
     popupWindow = window.open(
@@ -9,9 +13,23 @@
             );
 }
         </script>
+        <style>
+            * {
+                font-family: "Comic Neue", cursive;
+            }
+            h1, button {
+                color: coral;
+            }
+            body {
+                background-color: aqua;
+            }
+            button {
+                background-color: blue;
+            }
+        </style>
     </head>
     <body>
-        <h1>Start the simulator by <b>pressing the button.</b></h1>
-        <button onclick="showAppletPopup()">Open</button>
+        <h1>FreakOS</h1>
+        <button onclick="showAppletPopup()"><strong>Open</strong></button><p>or</p><a href="root/sys.html"><button><strong>Launch in Browser</strong></button></a>
     </body>
 </html>
